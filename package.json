@@ -6,7 +6,7 @@
   "author": "Nguyen Duc Long",
   "license": "MIT",
   "scripts": {
-    "build": "tsc && cp -r ./src/assets ./dist"
+    "build-lib": "vue-cli-service build --target lib --name v-spinner src/main.js"
   },
   "private": false,
   "repository": {
