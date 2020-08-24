@@ -1,6 +1,6 @@
 {
   "name": "v-spinner",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "dist/index.js",
   "description": "Show loading in component vue",
   "author": "Nguyen Duc Long",

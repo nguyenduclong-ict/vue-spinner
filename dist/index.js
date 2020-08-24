@@ -15,9 +15,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const vue_1 = __importDefault(require("vue"));
-const Loading_1 = __importDefault(require("./Loading"));
-const LoadingMask_1 = __importDefault(require("./LoadingMask"));
-require("./loading.css");
+const Loading_1 = __importDefault(require("./assets/Loading"));
+const LoadingMask_1 = __importDefault(require("./assets/LoadingMask"));
+require("./assets/loading.css");
 require("spinkit/spinkit.min.css");
 function default_1() {
     vue_1.default.component(Loading_1.default);

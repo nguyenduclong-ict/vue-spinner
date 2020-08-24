@@ -1,7 +1,7 @@
 import Vue from 'vue'
-import Loading from './Loading'
-import LoadingMask from './LoadingMask'
-import './loading.css'
+import Loading from './assets/Loading'
+import LoadingMask from './assets/LoadingMask'
+import './assets/loading.css'
 import 'spinkit/spinkit.min.css'
 
 export default function () {
