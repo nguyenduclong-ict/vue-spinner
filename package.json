@@ -1,0 +1,16 @@
+{
+  "name": "v-spinner",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "Show loading in component vue",
+  "author": "Nguyen Duc Long",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nguyenduclong-ict/vue-spinner.git"
+  },
+  "dependencies": {
+    "spinkit": "^2.0.1"
+  }
+}
