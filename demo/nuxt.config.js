@@ -25,6 +25,6 @@ export default {
     transpile: [/^element-ui/],
   },
   router: {
-    base: '/v-spinner/',
+    base: '/vue-spinner/',
   },
 }
