@@ -7,11 +7,11 @@
 <script>
 /* eslint-disable vue/require-default-prop */
 export default {
-  name: 'Loading',
+  name: "Spinner",
   props: {
     name: {
       type: String,
-      default: 'plane',
+      default: "plane",
     },
     nums: Number,
     dotName: String,
@@ -20,24 +20,24 @@ export default {
   },
   computed: {
     cName() {
-      return 'sk-' + this.name
+      return "sk-" + this.name;
     },
     cDotName() {
       const map = {
-        plane: '',
-        chase: 'sk-chase-dot',
-        bounce: 'sk-bounce-dot',
-        wave: 'sk-wave-rect',
-        pulse: '',
-        flow: 'sk-flow-dot',
-        swing: 'sk-swing-dot',
-        circle: 'sk-circle-dot',
-        'circle-fade': 'sk-circle-fade-dot',
-        grid: 'sk-grid-cube',
-        fold: 'sk-fold-cube',
-        wander: 'sk-wander-cube',
-      }
-      return this.dotName || map[this.name]
+        plane: "",
+        chase: "sk-chase-dot",
+        bounce: "sk-bounce-dot",
+        wave: "sk-wave-rect",
+        pulse: "",
+        flow: "sk-flow-dot",
+        swing: "sk-swing-dot",
+        circle: "sk-circle-dot",
+        "circle-fade": "sk-circle-fade-dot",
+        grid: "sk-grid-cube",
+        fold: "sk-fold-cube",
+        wander: "sk-wander-cube",
+      };
+      return this.dotName || map[this.name];
     },
     cNums() {
       const map = {
@@ -49,13 +49,13 @@ export default {
         flow: 3,
         swing: 2,
         circle: 12,
-        'circle-fade': 12,
+        "circle-fade": 12,
         grid: 9,
         fold: 4,
         wander: 3,
-      }
-      return Number.isInteger(this.nums) ? this.nums : map[this.name]
+      };
+      return Number.isInteger(this.nums) ? this.nums : map[this.name];
     },
   },
-}
+};
 </script>

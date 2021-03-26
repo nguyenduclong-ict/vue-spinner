@@ -1,4 +1,4 @@
-# Simple loading for vue
+# Simple spinner for vue
 
 ## Install:
 
@@ -8,50 +8,58 @@ vSpinner()
 ```
 
 ## Example:
+
 ```
-<div v-loading="true" loading-name="pulse" loading-color="red">
+<div v-spinner="true" spinner-name="pulse" spinner-color="red">
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ad ullam
     voluptatem reiciendis voluptas eveniet optio tenetur eum voluptatum quam,
     reprehenderit pariatur dolorem iure quos molestias esse quo, laudantium
   vitae!
 </div>
 ```
+
 ## Component Attributes
 
-| name          | default | acept value                                                                    |
-| ------------- | ------- | ------------------------------------------------------------------------------ |
-| loading-name  | plane   | plane,chase,bounce,wave  pulse,flow,swing,circle,circle-fade,grid,fold  wander |
-| loading-color |         |                                                                                |
-| loading-size  |         |                                                                                |
-
+| name          | default | acept value                                                                             |
+| ------------- | ------- | --------------------------------------------------------------------------------------- |
+| loading-name  | plane   | plane, chase, bounce, wave, pulse, flow, swing, circle, circle-fade, grid, fold, wander |
+| loading-color |         |                                                                                         |
+| loading-size  |         |                                                                                         |
 
 ## Using with method
-```
+
+```vue
 <template>
   <div ref="content">
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ad ullam
-      voluptatem reiciendis voluptas eveniet optio tenetur eum voluptatum quam,
-      reprehenderit pariatur dolorem iure quos molestias esse quo, laudantium
+    voluptatem reiciendis voluptas eveniet optio tenetur eum voluptatum quam,
+    reprehenderit pariatur dolorem iure quos molestias esse quo, laudantium
     vitae!
   </div>
 </template>
 
 <script>
 export default {
-  methods : {
-    show () {
-      this.loader = this.loader || this.$loading({ el: this.$refs.content })
-      this.loader.show()
+  data() {
+    return {
+      spinner: null,
+    };
+  },
+  methods: {
+    show() {
+      this.spinner = this.loader || this.$spinner({ el: this.$refs.content });
+      this.spinner.show();
     },
-    hide () {
-      this.loader.hide()
-    }
-  }
-}
+    hide() {
+      this.spinner.hide();
+    },
+  },
+};
 </script>
-
 ```
+
 ## Loading Options
+
 - el
 - duration
 - name
@@ -59,5 +67,3 @@ export default {
 - dotName
 - color
 - size
-
-
