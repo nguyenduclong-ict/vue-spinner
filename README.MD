@@ -7,15 +7,19 @@ import vSpinner from 'v-spinner'
 vSpinner()
 ```
 
+## [Demo](https://nguyenduclong-ict.github.io/vue-spinner/)
+
 ## Example:
 
-```
-<div v-spinner="true" spinner-name="pulse" spinner-color="red">
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ad ullam
+```vue
+<template>
+  <div v-spinner="true" spinner-name="pulse" spinner-color="red">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ad ullam
     voluptatem reiciendis voluptas eveniet optio tenetur eum voluptatum quam,
     reprehenderit pariatur dolorem iure quos molestias esse quo, laudantium
-  vitae!
-</div>
+    vitae!
+  </div>
+</template>
 ```
 
 ## Component Attributes
