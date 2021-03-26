@@ -2,6 +2,9 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   ssr: false,
   target: 'static',
+  generate: {
+    dir: '../docs',
+  },
   head: {
     title: 'vue-spinner',
     htmlAttrs: {
